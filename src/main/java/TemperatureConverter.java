@@ -24,6 +24,12 @@ public class TemperatureConverter {
         return (fahrenheit - 32) * (5.0 / 9.0);
     }
 
+    /**
+     * Converts a temperature from Celsius to Kelvin.
+     *
+     * @param celsius temperature in degrees Celsius
+     * @return the same temperature in kelvins
+     */
     public double celsiusToKelvin(double celsius) {
         return celsius + 273.15;
     }

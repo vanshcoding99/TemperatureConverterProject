@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("TemperatureConverter")
 class TemperatureConverterTest {
 
     /** Allowed difference when comparing double results. */
@@ -23,6 +24,7 @@ class TemperatureConverterTest {
     }
 
     @Test
+    @DisplayName("celsiusToKelvin: 0 °C converts to 273.15 K")
     void celsiusToKelvin_freezingPoint_returns273_15() {
         assertEquals(273.15, converter.celsiusToKelvin(0.0), DELTA);
     }
