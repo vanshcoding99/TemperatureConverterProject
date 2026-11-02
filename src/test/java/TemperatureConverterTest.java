@@ -17,6 +17,7 @@ class TemperatureConverterTest {
     }
 
     @Test
+    @DisplayName("fahrenheitToCelsius: 212 °F converts to 100 °C")
     void fahrenheitToCelsius_boilingPoint_returns100() {
         assertEquals(100.0, converter.fahrenheitToCelsius(212.0), DELTA);
     }
