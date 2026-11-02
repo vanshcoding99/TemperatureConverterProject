@@ -11,7 +11,7 @@ public class TemperatureConverter {
      * @return the same temperature in degrees Fahrenheit
      */
     public double celsiusToFahrenheit(double celsius) {
-        return (celsius * 9.0 / 5.0) + 32;
+        return (celsius * 9.0 / 5.0) - 32;
     }
 
     /**
